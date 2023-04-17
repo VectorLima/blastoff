@@ -12,7 +12,7 @@ programa
 		
    		escreva("Digite o valor do seu salário: ")
 		leia(salario)
-		enquanto(tp.cadeia_e_inteiro(salario, 10) != verdadeiro e tp.cadeia_e_real(salario) != verdadeiro){
+		enquanto(tp.cadeia_e_inteiro(salario, 10) != verdadeiro e tp.cadeia_e_real(salario) != verdadeiro ou tp.cadeia_para_real(salario) <= 0){
 			limpa()
 			escreva("Insira um valor válido!\n\n")
 			separador()
@@ -21,7 +21,7 @@ programa
 		}
 		escreva("Digite o valor do financiamento pretendido: ")
 		leia(financiamento)
-		enquanto(tp.cadeia_e_inteiro(financiamento, 10) != verdadeiro e tp.cadeia_e_real(financiamento) != verdadeiro){
+		enquanto(tp.cadeia_e_inteiro(financiamento, 10) != verdadeiro e tp.cadeia_e_real(financiamento) != verdadeiro ou tp.cadeia_para_real(financiamento) <= 0){
 			limpa()
 			escreva("Insira um valor válido!\n\n")
 			separador()
