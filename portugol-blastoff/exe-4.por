@@ -1,6 +1,7 @@
 programa
 {
-	inclua biblioteca Tipos --> tp
+	
+inclua biblioteca Tipos --> tp
 	funcao vazio separador()
 	{
 		escreva("-----------------------------------------------------------\n\n")	
@@ -13,7 +14,7 @@ programa
 
 		escreva("Digite o saldo do cliente: ")
 		leia(inicial)
-		enquanto(tp.cadeia_e_inteiro(inicial, 10) != verdadeiro e tp.cadeia_e_real(inicial) != verdadeiro){
+		enquanto(tp.cadeia_e_inteiro(inicial, 10) != verdadeiro e tp.cadeia_e_real(inicial) != verdadeiro ou tp.cadeia_para_real(inicial) <= 0){
 			limpa()
 			escreva("Insira um valor válido!\n\n")
 			escreva("Digite o saldo do cliente: ")
@@ -22,7 +23,7 @@ programa
 
 		escreva("Digite o valor do cheque: ")
 		leia(cheque)
-		enquanto(tp.cadeia_e_inteiro(cheque, 10) != verdadeiro e tp.cadeia_e_real(cheque) != verdadeiro){
+		enquanto(tp.cadeia_e_inteiro(cheque, 10) != verdadeiro e tp.cadeia_e_real(cheque) != verdadeiro ou tp.cadeia_para_real(cheque) <= 0){
 			limpa()
 			escreva("Insira um valor válido!\n\n")
 			escreva("Digite o valor do cheque: ")
