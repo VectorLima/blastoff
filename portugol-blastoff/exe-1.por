@@ -17,7 +17,7 @@ programa
 		escreva("Digite a quantidade de sistemas vendidos: ")
 		leia(qtdVendas)
 		
-		enquanto (tp.cadeia_e_inteiro(qtdVendas, 10) != verdadeiro){
+		enquanto (tp.cadeia_e_inteiro(qtdVendas, 10) != verdadeiro ou tp.cadeia_para_real(qtdVendas) <= 0){
 			limpa()
 			se(c >= 3){
 				escreva("Meu código é a prova de balas contra as suas ", c ," tentativas ;)\n")	
