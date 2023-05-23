@@ -40,7 +40,7 @@ double? altura() {
       double? h = double.tryParse(stdin.readLineSync()!);
       if (h == null) {
         throw FormatException('Altura inválida!');
-      } else if (h <= 0 || h > 10) {
+      } else if (h <= 0 || h > 3) {
         throw RangeError('Altura deve estar entre 0 e 3 metros.');
       } else {
         alturaValida = true;
